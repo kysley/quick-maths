@@ -90,7 +90,7 @@ _Used as an ending chain component, nothing after will be calculated._
 
 Type: `int`
 
-Value that will **truncate** decimal places, not round
+Value that will **truncate** decimal places, not round.
 _Used as THE ending chain component, not to be used after **.roughly** or **.equals**._
 
 
