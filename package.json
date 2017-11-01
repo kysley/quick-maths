@@ -1,0 +1,37 @@
+{
+  "name": "quick-maths",
+  "version": "1.2.0",
+  "description": "A chain-able, small, quick maths+utils lib `qm(4).plus(1).dividedby(2).fin()` -> `2.5`",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kysley/quick-maths.git"
+  },
+  "author": {
+    "name": "Evan Kysley",
+    "email": "evan@kysley.com",
+    "url": "kysley.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "nyc ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "math",
+    "multiplication",
+    "assertion",
+    "operations",
+    "chaining"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "*",
+    "nyc": "^11.2.1",
+    "xo": "*"
+  }
+}
