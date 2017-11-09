@@ -1,7 +1,6 @@
 'use strict';
-let o = 0;
+
 const maths = function maths(x) {
-	o = x;
 	return {
 		plus(y) {
 			return maths(x + y);
@@ -19,7 +18,17 @@ const maths = function maths(x) {
 			return y === x;
 		},
 		roughly(y) {
-			return o >= (y - 0.5) && o < (y + 0.5);
+			return x >= (y - 0.5) && x < (y + 0.5);
+		},
+		greater: {
+			than(y) {
+				return x > y;
+			}
+		},
+		less: {
+			than(y) {
+				return x < y;
+			}
 		},
 		fin(y) {
 			if (typeof y !== 'undefined' || !isNaN(y)) {

@@ -69,6 +69,14 @@ test('doesnt equals', t => {
 	t.is(m(10).equals(20), false);
 });
 
+test('greater than', t => {
+	t.is(m(10).greater.than(10), false);
+});
+
+test('less than', t => {
+	t.is(m(10).less.than(20), true);
+});
+
 test('everything lol', t => {
 	t.is(m(1).times(-5).dividedby(3).minus(1).plus(5).times(2).fin(2), 4.66);
 });
